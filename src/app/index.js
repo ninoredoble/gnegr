@@ -5,12 +5,14 @@ import { Avatar, TextInput, Text, Button } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Link, useRouter } from 'expo-router';
 
-const Login = ({ isDarkMode, toggleTheme }) => {
+const Login = () => {
   const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [isShowPassword, setIsShowPassword] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false); // Local theme state
 
+  const toggleTheme = () => setIsDarkMode(!isDarkMode); // Toggle theme function
   const currentTheme = isDarkMode ? styles.darkTheme : styles.lightTheme;
 
   return (
@@ -34,7 +36,7 @@ const Login = ({ isDarkMode, toggleTheme }) => {
       </View>
 
       {/* Input Fields */}
-      <View style={[styles.section, { marginTop: -10 }]}>
+      <View style={[styles.section, { marginTop: -50 }]}>
         <TextInput
           textContentType="emailAddress"
           label="Email"
@@ -73,7 +75,7 @@ const Login = ({ isDarkMode, toggleTheme }) => {
       </View>
 
       {/* Actions Section */}
-      <View style={[styles.section, { marginTop: 18 }]}>
+      <View style={[styles.section, { marginTop: -130 }]}>
         <Button
           onPress={() => router.replace('dashboard')}
           mode="contained"
@@ -125,7 +127,7 @@ const styles = StyleSheet.create({
   logoBox: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 10,
   },
   input: {
     marginBottom: 15,

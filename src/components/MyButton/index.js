@@ -32,12 +32,12 @@ export default MyButton
 
 const btnStyle = {
     buttonSmall: {
-        height: 50,
-    },
-    buttonMedium: {
         height: 60,
     },
-    buttonLarge: {
+    buttonMedium: {
         height: 70,
+    },
+    buttonLarge: {
+        height: 80,
     }
 }
