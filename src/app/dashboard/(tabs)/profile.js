@@ -182,7 +182,7 @@
             <Icon name="sign-out" size={20} color={currentTheme.buttonText} />
           </Animated.View>
           <Text style={[styles.buttonText, { color: currentTheme.buttonText }]}
-          onPress={() => router.replace('/')}
+          oonPress={() => router.back()} 
           >Sign Out</Text>
         </TouchableOpacity>
       </View>
