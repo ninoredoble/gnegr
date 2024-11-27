@@ -15,7 +15,7 @@ export default function DrawerLayout() {
                     title: 'Home',
                     drawerIcon: ({ focused}) => <MaterialCommunityIcons name={focused ? 'home' : 'home-outline'} size={20} />,
                 }}
-            />
+            />  
             <Drawer.Screen
                 name="settings" // This is the name of the page and must match the url from root
                 options={{

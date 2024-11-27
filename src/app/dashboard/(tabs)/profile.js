@@ -182,7 +182,7 @@
             <Icon name="sign-out" size={20} color={currentTheme.buttonText} />
           </Animated.View>
           <Text style={[styles.buttonText, { color: currentTheme.buttonText }]}
-          oonPress={() => router.back()} 
+          onPress={() => router.replace('/')}
           >Sign Out</Text>
         </TouchableOpacity>
       </View>
@@ -198,9 +198,10 @@
     },
     banner: {
       width: '150%',
-      height: 180,
+      height: 170,
       justifyContent: 'center',
       alignItems: 'center',
+      marginBottom: 5,
       marginTop: -40,
     },
     avatarContainer: {
@@ -210,7 +211,7 @@
       alignSelf: 'center',
     },
     nameContainer: {
-      marginTop: 50,
+      marginTop: 60,
       alignItems: 'center',
     },
     statusInfoContainer: {
