@@ -30,7 +30,7 @@ const Login = () => {
       <View style={[styles.section, styles.logoBox]}>
         <Avatar.Image
           style={{ backgroundColor: 'transparent' }}
-          size={200}
+          size={250}
           source={require('../assets/logo.png')}
         />
       </View>
@@ -75,7 +75,7 @@ const Login = () => {
       </View>
 
       {/* Actions Section */}
-      <View style={[styles.section, { marginTop: -130 }]}>
+      <View style={[styles.section, { marginTop: -150 }]}>
         <Button
           onPress={() => router.replace('dashboard')}
           mode="contained"
@@ -103,6 +103,7 @@ const Login = () => {
         <Button
           onPress={() => router.push('recover')}
           mode="outlined"
+          
           style={styles.forgotButton}
           labelStyle={{ color: '#0056B3' }}
         >
@@ -131,14 +132,23 @@ const styles = StyleSheet.create({
   },
   input: {
     marginBottom: 15,
-  },
-  button: {
-    marginVertical: 10,
-  },
-  forgotButton: {
-    borderColor: '#0056B3',
-    borderWidth: 1,
-  },
+ },
+    button: {
+        marginBottom: 10,
+        marginHorizontal: 12,
+        paddingVertical: 10,
+    },
+    buttonText: {
+        fontSize: 15,
+        color: 'white',
+    },
+    forgotButton: {
+        borderColor: '#0056B3', 
+        marginTop: 10,
+        marginHorizontal: 10,
+        paddingVertical: 10,
+        color: '#0056B3',
+    },
   centeredText: {
     textAlign: 'center',
   },
@@ -147,19 +157,20 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   lightTheme: {
-    background: '#FFFFFF',
-    text: '#000000',
-    card: '#F8F9FA',
-    inputOutline: '#CED4DA',
-    buttonBackground: '#007BFF',
-    placeholderText: '#6C757D',
-  },
-  darkTheme: {
-    background: '#343A40',
-    text: '#FFFFFF',
-    card: '#495057',
-    inputOutline: '#ADB5BD',
-    buttonBackground: '#6C757D',
-    placeholderText: '#CED4DA',
-  },
+    background: '#F9F9F9',
+    text: '#000',
+    buttonBackground: '#0056B3',
+    inputOutline: '#A0A0A0',
+    card: '#FFFFFF',
+    inputText: '#000',
+},
+darkTheme: {
+    background: '#1C1C1E',
+    text: '#FFF',
+    buttonBackground: '#0056B3',
+    inputOutline: '#A0A0A0',
+    card: '#2C2C2E',
+    inputText: '#A9A9A9',
+    placeholderText: '#A0A0A0',
+},
 });

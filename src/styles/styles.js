@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     forgotButton: {
         borderColor: '#0056B3', 
         marginTop: 10,
-        marginHorizontal: 12,
+        marginHorizontal: 10,
         paddingVertical: 10,
         color: '#0056B3',
     },

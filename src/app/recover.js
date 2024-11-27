@@ -52,13 +52,14 @@ const Recover = () => {
                 </View>
 
                 <Button
-               
-                    mode="contained"
-                    style={[styles.button, { backgroundColor: '#A0A0A0' }]}
-                    labelStyle={styles.buttonText}
-                >
-                    Login Here
-                </Button>
+                onPress={() => router.back()} 
+                mode="contained"
+                style={[styles.button, { backgroundColor: "#A0A0A0" }]}
+                labelStyle={styles.buttonText}
+              >
+                Login Here
+              </Button>
+              
             </View>
         </View>
     );
