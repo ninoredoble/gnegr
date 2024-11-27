@@ -24,6 +24,15 @@ export default function DrawerLayout() {
                     drawerIcon: ({ focused }) => <MaterialCommunityIcons name={focused ? 'cog' : 'cog-outline' } size={20} />,
                 }}
             />
+
+<Drawer.Screen
+                name="profile" // This is the name of the page and must match the url from root
+                options={{
+                    drawerLabel: 'profile',
+                    title: 'profile',
+                    drawerIcon: ({ focused }) => <MaterialCommunityIcons name={focused ? 'cog' : 'cog-outline' } size={20} />,
+                }}
+            />
         </Drawer>
     </GestureHandlerRootView>
   );

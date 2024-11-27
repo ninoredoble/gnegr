@@ -4,7 +4,7 @@ import React from 'react'
 const Setttings = () => {
   return (
     <View>
-      <Text>Setttings</Text>
+      <Text>Settings</Text>
     </View>
   )
 }

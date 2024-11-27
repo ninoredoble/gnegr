@@ -12,7 +12,7 @@ const Recover = () => {
     const [email, setEmail] = useState("");
     const router = useRouter();
     return (
-        <View style={[styles.container, { backgroundColor: styles.lightTheme.background }]}>
+        <View style={[styles.container, { marginTop: -75 }, { backgroundColor: styles.lightTheme.background }]}>
             <View style={[styles.section, styles.logoBox]}>
                 <Avatar.Image
                     style={{ backgroundColor: "transparent" }}

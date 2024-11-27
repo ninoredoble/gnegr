@@ -8,7 +8,7 @@ const Settings = () => {
 
   return (
     <View>
-      <Text>Settings</Text>
+      <Text>Settinfasfsafgs</Text>
       <Button mode="contained" onPress={() => router.replace('/')}>Logout</Button>
     </View>
   )
