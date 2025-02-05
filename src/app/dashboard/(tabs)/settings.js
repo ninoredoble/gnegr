@@ -11,15 +11,15 @@ const Settings = () => {
     ? {
         background: '#333',
         text: '#FFF',
-        secondary: '#FFD700',
+        secondary: '#1E90FF', // Used for active and important elements
         buttonBackground: '#444',
         borderColor: '#666',
       }
     : {
         background: '#FFF',
         text: '#000',
-        secondary: '#1E90FF',
-        buttonBackground: '#E0E0E0',
+        secondary: '#1E90FF', // Used for active and important elements
+        buttonBackground: '#F5F5F5',
         borderColor: '#B0B0B0',
       };
 
@@ -90,30 +90,33 @@ const Settings = () => {
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingTop: 10,
   },
   section: {
     marginBottom: 20,
+    paddingVertical: 10,
   },
   sectionLabel: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginVertical: 10,
+    marginBottom: 15,
   },
   settingOption: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 15,
+    paddingVertical: 18,
     paddingHorizontal: 20,
     borderRadius: 10,
-    marginBottom: 10,
+    marginBottom: 12,
     borderWidth: 1,
     backgroundColor: 'transparent',
   },
   settingText: {
     fontSize: 16,
-    marginLeft: 15,
     fontWeight: '500',
+    marginLeft: 15,
+    textAlign: 'left',
   },
   icon: {
     marginRight: 15,

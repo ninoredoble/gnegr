@@ -164,18 +164,6 @@
           </TouchableOpacity>
         </View>
 
-        {/* Dark Mode Toggle Card */}
-        <View style={[styles.card, { backgroundColor: currentTheme.card }]}>
-          <Text style={[styles.label, { color: currentTheme.text }]}>
-            {isDarkMode ? "Light Mode" : "Dark Mode"}
-          </Text>
-          <TouchableOpacity onPress={toggleTheme}>
-            <Animated.View style={{ transform: [{ scale: darkModeScale }] }}>
-              <Icon name={isDarkMode ? "sun-o" : "moon-o"} size={26} color={currentTheme.text} />
-            </Animated.View>
-          </TouchableOpacity>
-        </View>
-
         {/* Sign Out Button */}
         <TouchableOpacity style={[styles.button, { backgroundColor: currentTheme.buttonBackground }]} onPress={handleSignOut}>
           <Animated.View style={{ transform: [{ scale: signOutScale }] }}>

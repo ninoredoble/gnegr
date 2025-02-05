@@ -9,7 +9,7 @@ const Home = () => {
   const startProgress = () => {
     Animated.timing(progress, {
       toValue: 1, // 100% progress
-      duration: 2000, // Animation duration
+      duration: 1000, // Animation duration
       useNativeDriver: false, // Native driver for width animation
     }).start();
   };
